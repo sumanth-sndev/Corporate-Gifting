@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ad5b682347d08210ab4bdbe4116d43a1" extends="sys_user" label="Employee" max_length="40" name="x_805757_corpora_0_employee" type="collection">
+        <element label="Awards/Appreciations" max_length="40" name="awards_appreciations" type="string"/>
+        <element label="E-Wallet Balance" max_length="40" name="e_wallet_balance" read_only="true" type="integer"/>
+        <element label="E-Wallet Balance Validity" max_length="40" name="e_wallet_balance_validity" type="glide_date"/>
+        <element label="E-Wallet Budget" max_length="40" name="e_wallet_budget" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Employee Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Position Level" max_length="40" name="position_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Associate" sequence="0" value="associate"/>
+                <element inactive_on_update="false" label="Senior Associate" sequence="1" value="senior_associate"/>
+                <element inactive_on_update="false" label="Technical Lead" sequence="2" value="technical_lead"/>
+                <element inactive_on_update="false" label="Manager" sequence="3" value="manager"/>
+                <element inactive_on_update="false" label="Senior Manager" sequence="4" value="senior_manager"/>
+                <element inactive_on_update="false" label="Director" sequence="5" value="director"/>
+                <element inactive_on_update="false" label="Delivery Head" sequence="6" value="delivery_head"/>
+                <element inactive_on_update="false" label="HR" sequence="7" value="hr"/>
+            </choice>
+        </element>
+        <element choice="1" label="Project/Account" max_length="40" name="project_account" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="ABZ Consultancy" sequence="0" value="abz_consultancy"/>
+                <element inactive_on_update="false" label="PTL India Ltd." sequence="1" value="ptl_india_ltd"/>
+                <element inactive_on_update="false" label="Zone IT Services" sequence="2" value="zone_it_services"/>
+                <element inactive_on_update="false" label="YUC Motors" sequence="3" value="yuc_motors"/>
+                <element inactive_on_update="false" label="Qwerty Hospitals" sequence="4" value="qwerty_hospitals"/>
+            </choice>
+        </element>
+    </element>
+</database>
